@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shohail Uddin Sarker | Resume</title>
+    <title>Md Shohail Uddin Sarker | Resume</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -45,6 +45,14 @@
       .skill-badge:hover {
         transform: translateY(-4px) scale(1.03);
         box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+      }
+      .skill-tag {
+        transition: all 0.2s ease;
+      }
+      .skill-tag:hover {
+        transform: translateY(-2px);
+        background-color: #dbeafe;
+        border-color: #93c5fd;
       }
       .card-hover {
         transition: all 0.35s ease;
@@ -102,7 +110,7 @@
         overflow: hidden;
       }
       .mobile-menu.open {
-        max-height: 500px;
+        max-height: 700px;
       }
       /* Resume download CTA */
       .resume-btn {
@@ -140,7 +148,7 @@
       class="md:hidden gradient-bg text-white p-4 sticky top-0 z-50 shadow-lg"
     >
       <div class="flex justify-between items-center">
-        <h1 class="text-xl font-bold">Shohail Sarker</h1>
+        <h1 class="text-xl font-bold">Md Shohail Sarker</h1>
         <button id="menu-toggle" class="text-white focus:outline-none">
           <i class="fas fa-bars text-2xl"></i>
         </button>
@@ -173,9 +181,16 @@
           </li>
           <li class="nav-item">
             <a
-              href="#projects"
+              href="#publications"
               class="block py-2 px-3 hover:bg-blue-800 rounded"
-              >Projects & Awards</a
+              >Publications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#certifications"
+              class="block py-2 px-3 hover:bg-blue-800 rounded"
+              >Certifications</a
             >
           </li>
           <li class="pt-2">
@@ -199,11 +214,13 @@
           <img
             class="w-30 h-40 rounded-full avatar-glow mb-6"
             src="img/formal_pic__1_-removebg-preview.png"
-            alt="Shohail Uddin Sarker"
+            alt="Md Shohail Uddin Sarker"
           />
-          <h1 class="text-xl font-bold text-center">Shohail Uddin Sarker</h1>
+          <h1 class="text-xl font-bold text-center">
+            Md Shohail Uddin Sarker
+          </h1>
           <p class="text-blue-200 mt-2 text-center text-sm">
-            Web Developer & Cybersecurity Specialist
+            Machine Learning &amp; Full-Stack Engineer
           </p>
 
           <a
@@ -223,15 +240,16 @@
               </h3>
               <div class="space-y-3">
                 <p class="flex items-center">
-                  <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i> 902
-                  Cherry Street, Erie, PA
+                  <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
+                  4184 Sherri Ct, Lake Worth, FL 33461
                 </p>
                 <p class="flex items-center">
-                  <i class="fas fa-phone mr-3 text-blue-300"></i> (814) 218-9945
+                  <i class="fas fa-phone mr-3 text-blue-300"></i> +1 (814)
+                  218-9945
                 </p>
                 <p class="flex items-center">
                   <i class="fas fa-envelope mr-3 text-blue-300"></i>
-                  shohail.u.sarker@gmail.com
+                  shohailsarker321@gmail.com
                 </p>
               </div>
             </div>
@@ -244,22 +262,25 @@
               </h3>
               <div class="flex justify-center space-x-4 text-xl">
                 <a
-                  href="https://www.facebook.com/shohailsarker.shusom.99/"
+                  href="https://github.com/Shohail321"
                   target="_blank"
                   class="social-icon text-white hover:text-blue-300"
-                  ><i class="fab fa-facebook"></i
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
                 ></a>
                 <a
                   href="https://www.linkedin.com/in/shohail-sarker-shusom/"
                   target="_blank"
                   class="social-icon text-white hover:text-blue-300"
+                  title="LinkedIn"
                   ><i class="fab fa-linkedin"></i
                 ></a>
                 <a
-                  href="https://github.com/Shohail321"
+                  href="https://scholar.google.com/citations?user=LlJX3CoAAAAJ&hl=en"
                   target="_blank"
                   class="social-icon text-white hover:text-blue-300"
-                  ><i class="fab fa-github"></i
+                  title="Google Scholar"
+                  ><i class="fas fa-graduation-cap"></i
                 ></a>
               </div>
             </div>
@@ -271,8 +292,8 @@
       <main class="flex-1 px-8 lg:px-10">
         <div
           id="desktop-nav"
-          class="sticky top-4 z-20 bg-white/80 backdrop-blur-md rounded-xl shadow-lg shadow-slate-200/60 border border-slate-100 overflow-hidden px-4 py-4 mt-4 mb-6 hidden md:block">
-          <ul class="flex justify-center items-center">
+          class="sticky top-4 z-20 bg-white rounded-xl shadow-lg shadow-slate-200/60 border border-slate-100 overflow-hidden px-4 py-4 mt-4 mb-6 hidden md:block">
+          <ul class="flex flex-wrap justify-center items-center gap-1">
             <li class="nav-item">
               <a
                 href="#about"
@@ -305,35 +326,36 @@
             </li>
             <li class="nav-item">
               <a
-                href="#projects"
+                href="#publications"
                 class="nav-link block text-gray-700 hover:text-blue-600 transition-colors py-2 px-3 rounded"
-                ><i class="fas fa-trophy mr-2 text-blue-500"></i> Projects &
-                Awards<span class="underline-el"></span></a
+                ><i class="fas fa-book mr-2 text-blue-500"></i>
+                Publications<span class="underline-el"></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#certifications"
+                class="nav-link block text-gray-700 hover:text-blue-600 transition-colors py-2 px-3 rounded"
+                ><i class="fas fa-award mr-2 text-blue-500"></i>
+                Certifications<span class="underline-el"></span></a
               >
             </li>
           </ul>
         </div>
         <!-- About -->
         <section id="about" class="mb-12 pt-4 scroll-mt-20">
-          <!-- <h2
-            class="text-3xl font-bold text-gray-800 mb-6 relative inline-block"
-          >
-            <span class="relative z-10">About Me</span>
-            <span
-              class="gradient-underline absolute bottom-0 left-0 w-full h-2 rounded-full opacity-30 z-0"
-            ></span>
-          </h2> -->
           <div
             class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
           >
             <div class="p-8">
               <p class="text-sm text-gray-700 leading-relaxed">
-                I'm Shohail Uddin Sarker, a passionate web developer and
-                cybersecurity graduate committed to building secure,
-                user-centric digital experiences. With hands-on expertise in
-                React, Tailwind CSS, Firebase, and MongoDB, I blend technical
-                creativity with real-world problem-solving. I thrive on crafting
-                responsive, accessible interfaces that deliver value and impact.
+                Machine Learning and Full Stack Engineer with an M.S. in
+                Cybersecurity and experience developing web applications,
+                analyzing data, and building machine learning solutions.
+                Skilled in Python, SQL, React, and modern AI tools to rapidly
+                design, implement, and deliver practical software solutions.
+                Published researcher with experience spanning cybersecurity,
+                machine learning, and full-stack development.
               </p>
             </div>
           </div>
@@ -344,7 +366,7 @@
           <h2
             class="text-3xl font-bold text-gray-800 mb-8 relative inline-block"
           >
-            <span class="relative z-10 gradient-text">Professional Experience</span>
+            <span class="relative z-10 gradient-text">Work Experience</span>
             <span
               class="gradient-underline absolute bottom-0 left-0 w-full h-2 rounded-full opacity-30 z-0"
             ></span>
@@ -360,52 +382,51 @@
                   class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
                 >
                   <h3 class="text-xl font-semibold text-gray-800">
-                    Web Developer
+                    Full Stack Developer
                   </h3>
                   <span
                     class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
-                    >Dec 2022 - Mar 2022</span
+                    >May 2026 - Present</span
                   >
                 </div>
-                <p class="text-blue-600 font-medium mb-3">Technext Limited</p>
-                <h2 class="text-md font-semibold text-gray-800 mb-4">
+                <p class="text-blue-600 font-medium mb-3">
+                  Upskill Consultancy Inc
+                </p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-4">
                   Key Responsibilities
-                </h2>
+                </h4>
                 <ul
                   class="list-disc list-inside text-xs text-gray-700 space-y-2"
                 >
                   <li>
-                    Collaborated with senior developers to design and develop
-                    responsive web interfaces using HTML, CSS, JavaScript, and
-                    Tailwind CSS.
+                    Develop and maintain scalable full-stack web applications
+                    using modern front-end and back-end technologies.
                   </li>
                   <li>
-                    Assisted in integrating RESTful APIs and third-party
-                    services to enhance website functionality and performance.
+                    Design responsive and user-friendly interfaces with HTML,
+                    CSS, JavaScript, React, and Tailwind CSS.
                   </li>
                   <li>
-                    Participated in debugging, testing, and optimizing code for
-                    performance across modern browsers and devices.
+                    Build and integrate RESTful APIs while ensuring secure
+                    authentication and efficient data exchange.
                   </li>
                   <li>
-                    Maintained and updated existing websites to improve user
-                    experience and resolve technical issues.
+                    Design and optimize database schemas and queries to
+                    improve application performance and scalability.
                   </li>
                   <li>
-                    Contributed to version control using Git and GitHub,
-                    ensuring collaborative and trackable development.
+                    Debug, test, and deploy applications while maintaining
+                    high code quality through version control and code
+                    reviews.
                   </li>
                   <li>
-                    Implemented basic SEO best practices to increase website
-                    visibility and accessibility.
+                    Collaborate with cross-functional teams to deliver new
+                    features and improve application architecture.
                   </li>
                   <li>
-                    Worked with cross-functional teams in Agile sprints to
-                    deliver project milestones on time.
-                  </li>
-                  <li>
-                    Gained hands-on experience with frontend frameworks like
-                    React and tools like Firebase under mentorship.
+                    Implement security best practices and performance
+                    optimizations across both client-side and server-side
+                    applications.
                   </li>
                 </ul>
               </div>
@@ -420,53 +441,50 @@
                   class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
                 >
                   <h3 class="text-xl font-semibold text-gray-800">
-                    Junior Web Designer
+                    Junior Information Security Analyst Intern
                   </h3>
                   <span
                     class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
-                    >Jul 2021 - Dec 2021</span
+                    >Nov 2025 - Apr 2026</span
                   >
                 </div>
-                <p class="text-blue-600 font-medium mb-3">TechNext Limited</p>
-
-                <h2 class="text-sm font-semibold text-gray-800 mb-4">
+                <p class="text-blue-600 font-medium mb-3">
+                  TAAS Services LLC
+                </p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-4">
                   Key Responsibilities
-                </h2>
+                </h4>
                 <ul
                   class="list-disc text-xs list-inside text-gray-700 space-y-2"
                 >
                   <li>
-                    Designed and implemented responsive web layouts using HTML5,
-                    CSS3, and Tailwind CSS to ensure cross-device compatibility.
+                    Assisting in monitoring and analyzing security alerts,
+                    logs, and incidents.
                   </li>
                   <li>
-                    Assisted in creating visually appealing UI components
-                    aligned with client requirements and brand guidelines.
+                    Supporting vulnerability assessments and basic
+                    penetration testing activities.
                   </li>
                   <li>
-                    Collaborated with developers and UX teams to translate
-                    wireframes and mockups into functional, user-friendly web
-                    pages.
+                    Assisting with audits of information systems to ensure
+                    compliance with security policies.
                   </li>
                   <li>
-                    Contributed to optimizing website performance through
-                    efficient code practices and image optimization techniques.
+                    Supporting the development and documentation of
+                    information security policies, procedures, and best
+                    practices.
                   </li>
                   <li>
-                    Participated in team reviews and incorporated feedback to
-                    improve design quality and usability.
+                    Assisting in risk assessments and remediation planning
+                    for security gaps.
                   </li>
                   <li>
-                    Supported in maintaining and updating existing websites
-                    based on user needs and technical requirements.
+                    Collaborating with IT and compliance teams to ensure
+                    data integrity, confidentiality, and system availability.
                   </li>
                   <li>
-                    Applied basic animation and interactivity using CSS and
-                    JavaScript to enhance user experience.
-                  </li>
-                  <li>
-                    Ensured adherence to web accessibility standards and best
-                    practices in design.
+                    Preparing reports on findings and recommendations for
+                    security improvements.
                   </li>
                 </ul>
               </div>
@@ -481,53 +499,106 @@
                   class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
                 >
                   <h3 class="text-xl font-semibold text-gray-800">
-                    Technical Writer
+                    Digital Marketing Analyst
                   </h3>
                   <span
                     class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
-                    >Apr 2020 - Nov 2020</span
+                    >Apr 2025 - Nov 2025</span
                   >
                 </div>
-                <p class="text-blue-600 font-medium mb-3">TechNext Limited</p>
-                <h2 class="text-sm font-semibold text-gray-800 mb-4">
+                <p class="text-blue-600 font-medium mb-3">
+                  TAAS Services LLC
+                </p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-4">
                   Key Responsibilities
-                </h2>
+                </h4>
                 <ul
                   class="list-disc text-xs list-inside text-gray-700 space-y-2"
                 >
                   <li>
-                    Authored clear, concise, and comprehensive technical
-                    documentation, user manuals, and API guides for developers
-                    and end-users.
+                    Collected, cleaned, and analyzed marketing data from
+                    Google Analytics, email campaigns, and social media
+                    platforms to evaluate campaign performance.
                   </li>
                   <li>
-                    Collaborated with software developers, product managers, and
-                    QA teams to gather information and ensure documentation
-                    accuracy.
+                    Created interactive reports and dashboards to communicate
+                    marketing insights and key performance indicators.
                   </li>
                   <li>
-                    Created visual content such as diagrams and flowcharts to
-                    improve user understanding of complex systems.
+                    Conducted market research and competitor analysis to
+                    identify trends and support strategic decision-making.
                   </li>
                   <li>
-                    Maintained and updated documentation in alignment with
-                    software updates and feature releases.
+                    Assisted in SEO/SEM optimization by performing keyword
+                    research and analyzing website traffic metrics.
                   </li>
                   <li>
-                    Ensured consistency in tone, formatting, and terminology
-                    across all technical documents.
+                    Managed content planning and campaign tracking across
+                    multiple digital platforms.
                   </li>
                   <li>
-                    Applied best practices in technical writing to improve
-                    usability, accessibility, and customer satisfaction.
+                    Collaborated with design and content teams to improve
+                    user engagement and campaign effectiveness.
                   </li>
                   <li>
-                    Assisted in creating onboarding materials and product
-                    walkthroughs for new users.
+                    Utilized data-driven analysis to support marketing
+                    decisions and optimize campaign performance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Experience Card 4 -->
+            <div
+              class="reveal border-2 border-blue-200 rounded-xl overflow-hidden card-hover"
+            >
+              <div class="p-8">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-center mb-4"
+                >
+                  <h3 class="text-xl font-semibold text-gray-800">
+                    Software Engineer Intern
+                  </h3>
+                  <span
+                    class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
+                    >Apr 2021 - Nov 2021</span
+                  >
+                </div>
+                <p class="text-blue-600 font-medium mb-3">
+                  Technext Limited (Bangladesh)
+                </p>
+                <h4 class="text-sm font-semibold text-gray-800 mb-4">
+                  Key Responsibilities
+                </h4>
+                <ul
+                  class="list-disc text-xs list-inside text-gray-700 space-y-2"
+                >
+                  <li>
+                    Assisted in developing web applications using React,
+                    HTML, CSS, and JavaScript, contributing to UI components
+                    that improved user navigation.
                   </li>
                   <li>
-                    Managed documentation repositories using tools like Git,
-                    Google Docs, and Markdown.
+                    Collaborated with senior engineers to build and test
+                    RESTful APIs in Node.js/Express, supporting new feature
+                    development.
+                  </li>
+                  <li>Wrote unit tests with Jest to ensure code reliability.</li>
+                  <li>
+                    Helped optimize MongoDB queries and database schemas,
+                    reducing load time for key endpoints.
+                  </li>
+                  <li>
+                    Participated in code reviews and implemented feedback,
+                    improving code quality and following best practices.
+                  </li>
+                  <li>
+                    Supported deployment tasks on AWS S3 and EC2, gaining
+                    hands-on experience with cloud-based hosting.
+                  </li>
+                  <li>
+                    Debugged and fixed UI/UX issues, improving customer
+                    satisfaction scores from QA testing.
                   </li>
                 </ul>
               </div>
@@ -558,16 +629,15 @@
                   </h3>
                   <span
                     class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
-                    >Jan 2023 - Dec 2024</span
+                    >Graduated Dec 2024</span
                   >
                 </div>
                 <p class="text-blue-600 font-medium mb-2">Master of Science</p>
-                <p class="text-gray-700 mb-3">
-                  Computer and Information Systems
-                </p>
+                <p class="text-gray-700 mb-3">Cybersecurity</p>
+                <p class="text-gray-500 text-sm mb-3">Erie, PA, USA</p>
                 <div class="flex items-center">
                   <span class="text-gray-600 mr-2">GPA:</span>
-                  <span class="font-semibold text-gray-800">3.70/4.0</span>
+                  <span class="font-semibold text-gray-800">3.68/4.0</span>
                 </div>
               </div>
             </div>
@@ -583,18 +653,19 @@
                   </h3>
                   <span
                     class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full"
-                    >Aug 2016 - Jan 2020</span
+                    >Graduated Dec 2020</span
                   >
                 </div>
                 <p class="text-blue-600 font-medium mb-2">
                   Bachelor of Science
                 </p>
                 <p class="text-gray-700 mb-3">
-                  Computer Science and Engineering
+                  Computer Science &amp; Engineering
                 </p>
+                <p class="text-gray-500 text-sm mb-3">Dhaka, Bangladesh</p>
                 <div class="flex items-center">
                   <span class="text-gray-600 mr-2">GPA:</span>
-                  <span class="font-semibold text-gray-800">3.65/4.0</span>
+                  <span class="font-semibold text-gray-800">3.60/4.0</span>
                 </div>
               </div>
             </div>
@@ -612,395 +683,655 @@
             ></span>
           </h2>
 
-          <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden">
-            <div class="p-8">
-              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >HTML5</span
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Programming Languages -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >CSS3</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >JavaScript</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >React</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >Tailwind CSS</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >Firebase</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >MongoDB</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >Node.js</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >Express.js</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >Git</span
-                >
-                <span
-                  class="skill-badge bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-center font-medium"
-                  >REST APIs</span
-                >
+                  <i class="fas fa-code text-blue-500 mr-2"></i> Programming
+                  Languages
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Python</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >JavaScript (ES6+)</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >C</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >SQL</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >HTML5</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >CSS3</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Bash</span
+                  >
+                </div>
               </div>
             </div>
-          </div> -->
 
-          <div class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden">
-            <div class="p-8">
-              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-                <!-- HTML5 -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Web Development -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
-                  <span class="font-medium text-blue-800">HTML5</span>
+                  <i class="fas fa-globe text-blue-500 mr-2"></i> Web
+                  Development
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >React.js</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Next.js</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Node.js</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Express.js</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >RESTful APIs</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Tailwind CSS</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Responsive Web Design</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Firebase Auth</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >JSON</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- CSS3 -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Machine Learning & Data Science -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
-                  <span class="font-medium text-blue-800">CSS3</span>
+                  <i class="fas fa-brain text-blue-500 mr-2"></i> Machine
+                  Learning &amp; Data Science
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Scikit-learn</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >TensorFlow</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Pandas</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >NumPy</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Matplotlib</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Seaborn</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Feature Engineering</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Data Preprocessing</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Model Evaluation</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Classification</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Regression</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Clustering</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Explainable AI (XAI)</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Deep Learning Fundamentals</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- JavaScript -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Data Engineering & Databases -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fab fa-js-square text-4xl text-yellow-500 mb-2"></i>
-                  <span class="font-medium text-blue-800">JavaScript</span>
+                  <i class="fas fa-database text-blue-500 mr-2"></i> Data
+                  Engineering &amp; Databases
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >MongoDB</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >MySQL</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Firebase</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Data Cleaning</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Exploratory Data Analysis</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Data Visualization</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Database Design</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Query Optimization</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- React -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Cybersecurity -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
-                  <span class="font-medium text-blue-800">React</span>
+                  <i class="fas fa-shield-alt text-blue-500 mr-2"></i>
+                  Cybersecurity
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Web Application Security</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Secure Code Review</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Vulnerability Assessment</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >SIEM (Splunk, Elastic Stack)</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Nessus</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >OpenVAS</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Wireshark</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Network Security</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >IDS/IPS</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Incident Response</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Threat Intelligence</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- Tailwind CSS -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- DevOps -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fas fa-wind text-4xl text-cyan-400 mb-2"></i>
-                  <span class="font-medium text-blue-800">Tailwind CSS</span>
+                  <i class="fas fa-cloud text-blue-500 mr-2"></i> DevOps
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >AWS Fundamentals</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Git</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >GitHub</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >CI/CD Concepts</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Docker (Basic)</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- Firebase -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Development Tools -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fas fa-fire text-4xl text-orange-400 mb-2"></i>
-                  <span class="font-medium text-blue-800">Firebase</span>
+                  <i class="fas fa-toolbox text-blue-500 mr-2"></i>
+                  Development Tools
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >VS Code</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Jupyter Notebook</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Google Colab</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Postman</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Chrome DevTools</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >GitHub Actions</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- MongoDB -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Operating Systems -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fas fa-database text-4xl text-green-500 mb-2"></i>
-                  <span class="font-medium text-blue-800">MongoDB</span>
+                  <i class="fas fa-desktop text-blue-500 mr-2"></i> Operating
+                  Systems
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Linux/Unix</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Windows</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Bash</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >PowerShell</span
+                  >
                 </div>
+              </div>
+            </div>
 
-                <!-- Node.js -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
+            <!-- Professional Skills -->
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover md:col-span-2"
+            >
+              <div class="p-6">
+                <h3
+                  class="flex items-center text-md font-semibold text-gray-800 mb-4"
                 >
-                  <i class="fab fa-node-js text-4xl text-green-600 mb-2"></i>
-                  <span class="font-medium text-blue-800">Node.js</span>
-                </div>
-
-                <!-- Express.js -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
-                >
-                  <i class="fas fa-server text-4xl text-gray-600 mb-2"></i>
-                  <span class="font-medium text-blue-800">Express.js</span>
-                </div>
-
-                <!-- Git -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
-                >
-                  <i class="fab fa-git-alt text-4xl text-orange-600 mb-2"></i>
-                  <span class="font-medium text-blue-800">Git</span>
-                </div>
-
-                <!-- REST APIs -->
-                <div
-                  class="skill-badge flex flex-col items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer"
-                >
-                  <i
-                    class="fas fa-code-branch text-4xl text-purple-500 mb-2"
-                  ></i>
-                  <span class="font-medium text-blue-800">REST APIs</span>
+                  <i class="fas fa-lightbulb text-blue-500 mr-2"></i>
+                  Professional Skills
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Problem Solving</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Software Development Lifecycle (SDLC)</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Technical Documentation</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Cross-functional Collaboration</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Research &amp; Technical Writing</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Data Analysis</span
+                  >
+                  <span
+                    class="skill-tag border border-blue-100 bg-blue-50 text-blue-800 text-xs font-medium px-3 py-1.5 rounded-full"
+                    >Critical Thinking</span
+                  >
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Projects & Awards -->
-        <section id="projects" class="mb-12 scroll-mt-20">
+        <!-- Publications -->
+        <section id="publications" class="mb-12 scroll-mt-20">
           <h2
             class="text-3xl font-bold text-gray-800 mb-8 relative inline-block"
           >
-            <span class="relative z-10 gradient-text">Projects</span>
+            <span class="relative z-10 gradient-text"
+              >Projects &amp; Publications</span
+            >
             <span
               class="gradient-underline absolute bottom-0 left-0 w-full h-2 rounded-full opacity-30 z-0"
             ></span>
           </h2>
 
-          <section class="py-12 bg-white dark:bg-gray-900 rounded-xl">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-
-              <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <!-- Project Card -->
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="img/school-website.png"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      Landing Page Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Raw HTML</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Raw CSS</span
-                      >
-                      
-                    </p>
-                    <a
-                      href="https://shohail321.github.io/assignment-2-kids-school/"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      target="_blank"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="img/pet-website.png"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      Pet Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >HTML</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Tailwind CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded"
-                        >Responsive</span
-                      >
-                    </p>
-                    <a
-                      href="https://shohail321.github.io/pet-adopt-website/"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      target="_blank"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
-
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="img/auction-gallery.png"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      Aution Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >HTML & CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Tailwind CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded"
-                        >JavaScript</span
-                      >
-                    </p>
-                    <a
-                      href="https://stiff-representative.surge.sh/"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      target="_blank"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
-
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="https://via.placeholder.com/400x200"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      E-Commerce Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >React</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Tailwind CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded"
-                        >Firebase</span
-                      >
-                    </p>
-                    <a
-                      href="#"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
-
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="https://via.placeholder.com/400x200"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      E-Commerce Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >React</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Tailwind CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded"
-                        >Firebase</span
-                      >
-                    </p>
-                    <a
-                      href="#"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
-
-
-                <div
-                  class="reveal bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transition transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-200/60 border border-transparent hover:border-blue-200"
-                >
-                  <img
-                    class="w-full h-48 object-cover"
-                    src="https://via.placeholder.com/400x200"
-                    alt="Project Screenshot"
-                  />
-                  <div class="p-5">
-                    <h3
-                      class="text-xl font-semibold text-gray-800 dark:text-white mb-2"
-                    >
-                      E-Commerce Website
-                    </h3>
-                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >React</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded mr-2"
-                        >Tailwind CSS</span
-                      >
-                      <span
-                        class="inline-block bg-gray-200 dark:bg-gray-700 text-xs px-2 py-1 rounded"
-                        >Firebase</span
-                      >
-                    </p>
-                    <a
-                      href="#"
-                      class="text-blue-600 dark:text-blue-400 text-sm hover:underline"
-                      >View Project</a
-                    >
-                  </div>
-                </div>
-
+          <div class="grid gap-6 md:grid-cols-2">
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Advancements and applications of generative artificial
+                  intelligence and large language models on business
+                  management: A comprehensive review
+                </h3>
+                <a
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LlJX3CoAAAAJ&citation_for_view=LlJX3CoAAAAJ:2osOgNQ5qMEC"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
               </div>
             </div>
-          </section>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Transforming breast cancer identification: An in-depth
+                  examination of advanced machine learning models applied to
+                  histopathological images
+                </h3>
+                <a
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LlJX3CoAAAAJ&citation_for_view=LlJX3CoAAAAJ:u-x6o8ySG0sC"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Comparative analysis of machine learning algorithms for
+                  predicting cybersecurity attack success: A performance
+                  evaluation
+                </h3>
+                <a
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LlJX3CoAAAAJ&citation_for_view=LlJX3CoAAAAJ:qjMakFHDy7sC"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Comparative analysis of machine learning models for
+                  accurate retail sales demand forecasting
+                </h3>
+                <a
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LlJX3CoAAAAJ&citation_for_view=LlJX3CoAAAAJ:d1gkVwhDpl0C"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Machine Learning Models for Predicting Corticosteroid
+                  Therapy Necessity in COVID-19 Patients: A Comparative Study
+                </h3>
+                <a
+                  href="https://www.neliti.com/publications/589877/machine-learning-models-for-predicting-corticosteroid-therapy-necessity-in-covid"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Enhancing Viral DNA Sequence Classification using Hybrid
+                  Deep Learning Models and Genetic Algorithm Optimization
+                </h3>
+                <a
+                  href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=LlJX3CoAAAAJ&citation_for_view=LlJX3CoAAAAJ:u5HHmVD_uO8C"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden card-hover md:col-span-2"
+            >
+              <div class="p-6">
+                <i class="fas fa-file-lines text-2xl text-blue-500 mb-3"></i>
+                <h3 class="text-md font-semibold text-gray-800 mb-3">
+                  Developing a Deep Learning Methodology to Anticipate the
+                  Onset of Diabetic Retinopathy at an Early Stage
+                </h3>
+                <a
+                  href="https://link.springer.com/chapter/10.1007/978-3-031-70399-7_6"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  >View Publication <i class="fas fa-arrow-up-right-from-square text-xs"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="mb-12 scroll-mt-20">
+          <h2
+            class="text-3xl font-bold text-gray-800 mb-8 relative inline-block"
+          >
+            <span class="relative z-10 gradient-text"
+              >Certifications &amp; Awards</span
+            >
+            <span
+              class="gradient-underline absolute bottom-0 left-0 w-full h-2 rounded-full opacity-30 z-0"
+            ></span>
+          </h2>
+
+          <div class="reveal bg-white border-2 border-blue-200 rounded-xl shadow-md overflow-hidden">
+            <div class="p-8 divide-y divide-blue-100">
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between py-4 first:pt-0 last:pb-0"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-gray-800">
+                      Introduction to Python
+                    </p>
+                    <p class="text-sm text-gray-500">DataCamp</p>
+                  </div>
+                </div>
+                <a
+                  href="https://www.datacamp.com/statement-of-accomplishment/course/02cb1ad1eac6c478d3d669662a775ebc6bb128a3?raw=1"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline mt-2 sm:mt-0"
+                  >View Certificate</a
+                >
+              </div>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between py-4 first:pt-0 last:pb-0"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-gray-800">
+                      Intermediate Python
+                    </p>
+                    <p class="text-sm text-gray-500">DataCamp</p>
+                  </div>
+                </div>
+                <a
+                  href="https://www.datacamp.com/statement-of-accomplishment/course/24fe9a947cc859a437a411f952eed1dfe8568e08?raw=1"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline mt-2 sm:mt-0"
+                  >View Certificate</a
+                >
+              </div>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between py-4 first:pt-0 last:pb-0"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                  <div>
+                    <p class="font-medium text-gray-800">
+                      Data Manipulation with pandas
+                    </p>
+                    <p class="text-sm text-gray-500">DataCamp</p>
+                  </div>
+                </div>
+                <a
+                  href="https://www.datacamp.com/statement-of-accomplishment/course/e7910b84af6117f93e86bb6253fe05648f9672eb?raw=1"
+                  target="_blank"
+                  class="text-blue-600 text-sm font-medium hover:underline mt-2 sm:mt-0"
+                  >View Certificate</a
+                >
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
